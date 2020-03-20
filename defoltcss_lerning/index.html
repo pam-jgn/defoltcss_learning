@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>送信フォーム</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -12,15 +13,15 @@
             <h1>お問い合わせ</h1>
             <p>ご質問がありましたらお気軽にご連絡ください。</p>
             <h3>お名前</h3>
-            <input type="text" placeholder="例：KBTIT" />
+            <input type="text" placeholder="例：KBTIT" class="item"/>
             <h3>ご質問内容</h3>
-            <select namw="question">
-                <option value="question1">下北について</option>
+            <select name="question" class="item">
+                <option value="question1" selected>下北について</option>
                 <option value="question2">MURについて</option>
                 <option value="question3">TONについて</option>
             </select>
             <h3>ご意見・ご質問</h3>
-            <textarea name="message" placeholder="例：どういう系統が好きなの？"></textarea>
+            <textarea name="message" placeholder="例：どういう系統が好きなの？" class="item"></textarea>
 
         </form>
     </main>
