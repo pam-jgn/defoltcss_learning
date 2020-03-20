@@ -18,17 +18,42 @@ h1{
 p {
     font-size: 1rem;
     font-weight: bold;
+    margin: 0 0 2rem 0;
 }
 input{
     margin: 0 0 2rem 0;
     width: 10rem;
 }
+
+/*IEの矢印を非表示*/
+select::-ms-expand{
+    display: none;
+}
 select {
-    margin: 0 0 2rem 0;
-    width: 10rem;
+    /*各ブラウザのselect要素の標準CSSをリセット*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*余白と文字*/
+    margin-bottom: 20px;
+    padding: 7px 30px 7px 10px;
+    font-size: 93%;
+    line-height: 1,1rem;
+    /*矢印のアイコン*/
+    background-image: url(images/icon_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 12px 10px;
+    background-position: right 10px center;
+
 }
 textarea {
     margin: 0 0 2rem 0;
     width: 20rem;
     height: 10rem;
+}
+.item{
+    border-width: medium;
+    border-style: solid;
+    border-color: #808080;
+    background-color: #ffffff;
 }
