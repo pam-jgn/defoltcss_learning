@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+    <main>
+        <form action="example.php" method="post" name="contact-form">
+            <h1>お問い合わせ</h1>
+            <p>ご質問がありましたらお気軽にご連絡ください。</p>
+            <h3>お名前</h3>
+            <input type="text" placeholder="例：KBTIT" />
+            <h3>ご質問内容</h3>
+            <select namw="question">
+                <option value="question1">下北について</option>
+                <option value="question2">MURについて</option>
+                <option value="question3">TONについて</option>
+            </select>
+            <h3>ご意見・ご質問</h3>
+            <textarea name="message" placeholder="例：どういう系統が好きなの？"></textarea>
 
+        </form>
+    </main>
 </body>
 </html>
